@@ -30,13 +30,14 @@ The workflow includes:
 - Generating lag features and growth rates for temporal trend capture.  
 
 ### 3. **Model Development**
-Three models will be compared:
-- **Extreme Gradient Boosting (XGBoost)** – efficient, interpretable tree-based model for complex nonlinear data.  
-- **Random Forest (RF)** – ensemble approach to reduce overfitting and handle variable interactions.  
-- **Advanced Long Short-Term Memory (LSTM)** – a deep learning model designed for multivariate time series forecasting.  
+Following models will be compared:
+- Linear Regression
+- Lasso/Ridge Regression
+- KNN
+- SVM
+- xgBoost
+- LSTM
 
-**Hyperparameter tuning:**  
-- Performed using **Bayesian Optimisation** and **time-series cross-validation** to improve generalisability.  
 
 **Evaluation Metrics:**  
 - Mean Absolute Error (MAE)  
@@ -45,6 +46,5 @@ Three models will be compared:
 - Coefficient of Determination (R²)  
 
 ### 4. **Interpretability and Validation**
-- Apply **SHAP (SHapley Additive exPlanations)** to interpret model outputs and identify key socioeconomic drivers.  
 - Conduct **scenario and sensitivity analyses** (e.g., higher GDP growth, population surges).  
 - Compare predicted emissions to each country’s **NDC targets**.
